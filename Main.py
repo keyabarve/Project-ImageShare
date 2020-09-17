@@ -1,4 +1,4 @@
-
+import webbrowser
 import pyimgur
 from twilio.rest import Client
 
@@ -7,11 +7,14 @@ from twilio.rest import Client
 
 client_id = input("Enter client id : ") # your client id
 client_secret = input("Enter client secret : ") # your client secret
-access_token = input("Enter access token : ") # your access token
-refresh_token = input("Enter refresh token : ") # your refresh token
 
-client = pyimgur.Imgur(client_id, client_secret, access_token, refresh_token)
-image_path = input("Enter path of the image : ")
+client = pyimgur.Imgur(client_id, client_secret)
+auth_url = client.authorization_url('pin')
+webbrowser.open(auth_url)
+pin = input("Enter the pin : ") # the pin you receive on your imgur account
+client.exchange_pin(pin)
+
+image_path = input("Enter path of the image : ") # path of the image which you want to upload
 image = client.upload_image(image_path)
 image_link = image.link
 
@@ -27,11 +30,11 @@ client = Client(account_sid, auth_token)
 
 message = client.messages.create(
     to= input ("Enter phone number at which you would like to receive the image link : ") # your phone number 
-    from_="number_by_which_message_is_sent",
+    from_="your_twilio_account_trial_number",
     body= image_link)
 
 
-# Printing image link
+Printing image link
 
 print("Image Link: ", image_link)
 print("Image Link has also been sent to you via message.")
