@@ -28,7 +28,7 @@ auth_token  = "your_auth_token" # your auth token from twilio
 client_twilio = Client(account_sid, auth_token)
 
 message = client_twilio.messages.create(
-    to= input ("Enter phone number at which you would like to receive the image link : ") # your phone number 
+    to= input ("Enter phone number at which you would like to receive the image link : "), # your phone number 
     from_="your_twilio_account_trial_number",
     body= image_link)
 
