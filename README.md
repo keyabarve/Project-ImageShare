@@ -32,6 +32,6 @@ The following dependencies can be easily installed using the steps given below.
   * Type in the phone number to which you wish to receive a text message (SMS) containing the link of your uploaded image. Press Enter.
   * You will receive the link of your image in Terminal, and the same link will be sent to your phone number.
 
-# Contributions
+# Contributors
 * Keya Barve
 * Mandeepika Saini
