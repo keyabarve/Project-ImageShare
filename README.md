@@ -17,11 +17,11 @@ The following dependencies can be easily installed using the steps given below.
 # Instructions for Usage
 * **Downloading the Program**
   * Open up Terminal on your computer.
-  * Clone this repository using the '''git clone''' command as follows:
+  * Clone this repository using the ```git clone``` command as follows:
     git clone https://github.com/keyabarve/Project-ImageShare. Press Enter.
-  * Type '''cd''' and enter the path of the repository. Press Enter.
+  * Type ```cd``` and enter the path of the repository. Press Enter.
 * **Uploading the Image to Imgur and Receiving the Link**
-  * In Terminal itself, type the command '''python3 Main.py'''. Press Enter.
+  * In Terminal itself, type the command ```python3 Main.py```. Press Enter.
   * Type in your Client ID, Client Secret, the Pin that you receive, and finally the path of the image you wish to upload. Press Enter after you type in each detail.
   * Type in the phone number to which you wish to receive a text message (SMS) containing the link of your uploaded image. Press Enter.
   * You will receive the link of your image in Terminal, and the same link will be sent to your phone number.
