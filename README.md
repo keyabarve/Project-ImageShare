@@ -15,6 +15,11 @@ The following dependencies can be easily installed using the steps given below.
 * twilio
 
 # Instructions for Usage
+* **Installing the Requirements**
+  * ```pip install pyimgur``` can be used to install pyimgur.
+  * ```pip install twilio``` can be used to install twilio.
+  **NOTE :** If the ```pip``` command doesn't work, try using ```pip3``` or ```sudo pip``` or ```sudo pip3``` instead.
+  
 * **Downloading the Program**
   * Open up Terminal on your computer.
   * Clone this repository using the ```git clone``` command as follows:
